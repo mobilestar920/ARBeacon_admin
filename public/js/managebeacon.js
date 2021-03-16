@@ -6,7 +6,7 @@ $(document).ready(function() {
         $('#beacon_caracters_table').dataTable().fnDestroy();
 
         let uuid = this.children[1].textContent;
-        let endpoint = 'http://192.168.101.181:8001/beacon/characters/' + uuid;
+        let endpoint = 'http://160.16.75.49/beacon/characters/' + uuid;
 
         $('#beacon_caracters_table').DataTable({
             "ajax":{
