@@ -142,7 +142,7 @@
                 </div>
             </div>
         </main>
-        <div class="modal" id="modal_register_character">
+        <div class="modal fade" id="modal_register_character">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="bd p-15">

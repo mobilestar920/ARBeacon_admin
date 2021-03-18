@@ -143,7 +143,7 @@
                 </div>
             </div>
         </main>
-        <div class="modal" id="modal_edit_character">
+        <div class="modal fade" id="modal_edit_character">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="bd p-15">
@@ -181,7 +181,7 @@
                 </div>
             </div>
         </div>
-        <div class="modal" id="new_character">
+        <div class="modal fade" id="new_character">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="bd p-15">
