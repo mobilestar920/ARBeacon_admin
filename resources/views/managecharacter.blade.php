@@ -107,9 +107,9 @@
                                         <tr>
                                             <th>No</th>
                                             <th>이름</th>
-                                            <th>크기</th>
-                                            <th>이동반경</th>
-                                            <th>현시높이</th>
+                                            <th>크기(배수)</th>
+                                            <th>이동반경(m)</th>
+                                            <th>현시높이(m)</th>
                                             <th></th>
                                         </tr>
                                     </thead>
@@ -199,15 +199,15 @@
                                 <input type="text" class="form-control" id="name" name="name" placeholder="이름을 입력하시요">
                             </div>
                             <div class="form-group">
-                                <label for="app_name">크기</label>
+                                <label for="app_name">크기(배수)</label>
                                 <input type="text" class="form-control" id="size" name="size" placeholder="배수를 입력하시오">
                             </div>
                             <div class="form-group">
-                                <label for="app_name">이동반경</label>
+                                <label for="app_name">이동반경(m)</label>
                                 <input type="text" class="form-control" id="radius" name="radius" placeholder="최대 30m">
                             </div>
                             <div class="form-group">
-                                <label for="app_name">현시높이</label>
+                                <label for="app_name">현시높이(m)</label>
                                 <input type="text" class="form-control" id="altitude" name="altitude" placeholder="높이를 입력하시오.">
                             </div>
                             <div class="form-group">
