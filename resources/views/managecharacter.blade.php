@@ -190,25 +190,21 @@
                     <div class="modal-body">
                         <form method="POST" action="{{ route('add_character') }}" enctype="multipart/form-data">
                             @csrf
-                            <div class="form-group" style="visibility: hidden; max-height: 0px;">
-                                <label class="fw-500">Id</label>
-                                <input type="text" class="form-control" id="character_id" name="character_id" placeholder="App ID">
-                            </div>
                             <h5 class="mt-1 mb-2" id="modalProfileLabel"></h5><div class="form-group">
                                 <label for="app_name">이름</label>
-                                <input type="text" class="form-control" id="name" name="name" placeholder="이름을 입력하시요">
+                                <input type="text" class="form-control" id="add_name" name="add_name" placeholder="이름을 입력하시요">
                             </div>
                             <div class="form-group">
                                 <label for="app_name">크기(배수)</label>
-                                <input type="text" class="form-control" id="size" name="size" placeholder="배수를 입력하시오">
+                                <input type="text" class="form-control" id="add_size" name="add_size" placeholder="배수를 입력하시오">
                             </div>
                             <div class="form-group">
                                 <label for="app_name">이동반경(m)</label>
-                                <input type="text" class="form-control" id="radius" name="radius" placeholder="최대 30m">
+                                <input type="text" class="form-control" id="add_radius" name="add_radius" placeholder="최대 30m">
                             </div>
                             <div class="form-group">
                                 <label for="app_name">현시높이(m)</label>
-                                <input type="text" class="form-control" id="altitude" name="altitude" placeholder="높이를 입력하시오.">
+                                <input type="text" class="form-control" id="add_altitude" name="add_altitude" placeholder="높이를 입력하시오.">
                             </div>
                             <div class="form-group">
                                 <label for="file">화일</label>

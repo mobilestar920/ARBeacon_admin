@@ -49,10 +49,10 @@ class ManageCharacterController extends Controller
     }
 
     public function createCharacter(Request $reqeust) {
-        $name = $reqeust->name;
-        $size = $reqeust->size;
-        $radius = $reqeust->radius;
-        $altitude = $reqeust->altitude;
+        $name = $reqeust->add_name;
+        $size = $reqeust->add_size;
+        $radius = $reqeust->add_radius;
+        $altitude = $reqeust->add_altitude;
 
         $character = Character::where('name', $name)->first();
 
