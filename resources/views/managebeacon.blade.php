@@ -146,7 +146,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="bd p-15">
-                        <h5 class="m-0">キャラクターの登録</h5>
+                        <h5 class="m-0">キャラクター登録</h5>
                     </div>
                     <div class="modal-body">
                         <form method="POST" action="{{ route('register_character') }}" enctype="multipart/form-data">
@@ -159,7 +159,7 @@
                             <div class="form-group">
                                 <label for="app_list">キャラクター名</label>
                                 <select id="character_id" name="character_id" class="form-control">
-                                    <option value="0" selected>캐랙을 선택하세요</option>
+                                    <option value="0" selected>キャラクターを選択してください。</option>
                                     @foreach($characters as $i=>$character)
                                     <option value="{{ $character['id'] }}">{{ $character['name'] }}</option>
                                     @endforeach

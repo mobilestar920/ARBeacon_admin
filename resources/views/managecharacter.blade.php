@@ -147,7 +147,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="bd p-15">
-                        <h5 class="m-0">캐랙변경</h5>
+                        <h5 class="m-0">キャラクターの変更</h5>
                     </div>
                     <div class="modal-body">
                         <form method="POST" action="{{ route('edit_character') }}" enctype="multipart/form-data">
@@ -185,7 +185,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="bd p-15">
-                        <h5 class="m-0">캐랙등록</h5>
+                        <h5 class="m-0">キャラクター登録</h5>
                     </div>
                     <div class="modal-body">
                         <form method="POST" action="{{ route('add_character') }}" enctype="multipart/form-data">
