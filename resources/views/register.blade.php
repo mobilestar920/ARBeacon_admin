@@ -22,26 +22,26 @@
                         <!-- Header -->
                         <div class="form-header info-color">
                             <h3 class="mt-2">
-                                <b>Sign Up</b>
+                                <b>登録</b>
                             </h3>
                         </div>
                         <div class="md-form">
-                            <input type="text" id="name" name="name" class="form-control" placeholder="Name">
+                            <input type="text" id="name" name="name" class="form-control" placeholder="ユーザー名">
                         </div>
                         <div class="md-form">
-                            <input type="text" id="email" name="email" class="form-control" placeholder="Email">
+                            <input type="text" id="email" name="email" class="form-control" placeholder="メール">
                         </div>
                         <div class="md-form">
-                            <input type="password" id="password" name="password" class="form-control" placeholder="Password">
+                            <input type="password" id="password" name="password" class="form-control" placeholder="パスワード">
                         </div>
                         <div class="text-center">
-                            <button class="btn btn-info waves-effect waves-light" type="submit" style="color: #17a2b8 !important; background-color: white;">Sign up</button>
+                            <button class="btn btn-info waves-effect waves-light" type="submit" style="color: #17a2b8 !important; background-color: white;">登録</button>
+                        </div>
+                        <div class="text-center" style="color: #ffffff;">
+                            --------
                         </div>
                         <div class="text-center">
-                            ---- OR ----
-                        </div>
-                        <div class="text-center">
-                            <a style="color: #17a2b8 !important;" href="{{ route('login') }}"> Log In</a>
+                            <a style="color: #17a2b8 !important;" href="{{ route('login') }}">ログイン</a>
                         </div>
                     </div>
                 </div>
