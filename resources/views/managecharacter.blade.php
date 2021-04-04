@@ -42,7 +42,7 @@
                         <span class="icon-holder">
                             <i class="c-blue-500 ti-mobile"></i>
                         </span>
-                        <span class="title">비콘관리</span>
+                        <span class="title">ビーコンの管理</span>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -50,7 +50,7 @@
                         <span class="icon-holder">
                             <i class="c-brown-500 ti-shift-right"></i>
                         </span>
-                        <span class="title">캐랙관리</span>
+                        <span class="title">キャラクターの管理</span>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -58,7 +58,7 @@
                         <span class="icon-holder">
                             <i class="c-deep-red-500 ti-export"></i>
                         </span>
-                        <span class="title">로그아웃</span>
+                        <span class="title">ログアウト</span>
                     </a>
                 </li>
             </ul>
@@ -94,22 +94,22 @@
         <main class='main-content bgc-grey-100'>
             <div id='mainContent'>
                 <div class="container-fluid">
-                    <h4 class="c-grey-900 mT-10 mB-30">캐랙터목록</h4>
+                    <h4 class="c-grey-900 mT-10 mB-30">キャラクターのリスト</h4>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="bgc-white bd bdrs-3 p-20 mB-20">
                                 <form style="display: flex">
                                     <h4 class="c-grey-900 mB-20" style="flex: 1 1 auto;"></h4>
-                                    <button class="btn btn-danger" type="button" style="margin-bottom: 20px !important;" id="btn_new_resource">추가</button>
+                                    <button class="btn btn-danger" type="button" style="margin-bottom: 20px !important;" id="btn_new_resource">追加</button>
                                 </form>
                                 <table id="dataTable" class="table table-bordered" cellspacing="0" width="100%">
                                     <thead>
                                         <tr>
                                             <th>No</th>
-                                            <th>이름</th>
-                                            <th>크기(배수)</th>
-                                            <th>이동반경(m)</th>
-                                            <th>현시높이(m)</th>
+                                            <th>キャラクター名</th>
+                                            <th>サイズ(倍数)</th>
+                                            <th>移動半径(m)</th>
+                                            <th>顕示高(m)</th>
                                             <th></th>
                                         </tr>
                                     </thead>
@@ -158,23 +158,23 @@
                                 <input type="text" class="form-control" id="character_id" name="character_id" placeholder="App ID">
                             </div>
                             <div class="form-group">
-                                <label for="app_name">이름</label>
-                                <input type="text" class="form-control" id="name" name="name" placeholder="이름을 입력하시요">
+                                <label for="app_name">キャラクター名</label>
+                                <input type="text" class="form-control" id="name" name="name" placeholder="キャラクター名">
                             </div>
                             <div class="form-group">
-                                <label for="app_name">크기</label>
-                                <input type="text" class="form-control" id="size" name="size" placeholder="배수를 입력하시오">
+                                <label for="app_name">サイズ(倍数)</label>
+                                <input type="text" class="form-control" id="size" name="size" placeholder="倍数">
                             </div>
                             <div class="form-group">
-                                <label for="app_name">이동반경</label>
-                                <input type="text" class="form-control" id="radius" name="radius" placeholder="최대 30m">
+                                <label for="app_name">移動半径(m)</label>
+                                <input type="text" class="form-control" id="radius" name="radius" placeholder="移動半径">
                             </div>
                             <div class="form-group">
-                                <label for="app_name">현시높이</label>
-                                <input type="text" class="form-control" id="altitude" name="altitude" placeholder="높이를 입력하시오.">
+                                <label for="app_name">顕示高(m)</label>
+                                <input type="text" class="form-control" id="altitude" name="altitude" placeholder="顕示高">
                             </div>
                             <div class="text-right">
-                                <button class="btn btn-primary cur-p" id="btn_update" type="submit">저장</button>
+                                <button class="btn btn-primary cur-p" id="btn_update" type="submit">保存</button>
                             </div>
                         </form>
                     </div>
@@ -191,27 +191,27 @@
                         <form method="POST" action="{{ route('add_character') }}" enctype="multipart/form-data">
                             @csrf
                             <h5 class="mt-1 mb-2" id="modalProfileLabel"></h5><div class="form-group">
-                                <label for="app_name">이름</label>
-                                <input type="text" class="form-control" id="add_name" name="add_name" placeholder="이름을 입력하시요">
+                                <label for="app_name">キャラクター名</label>
+                                <input type="text" class="form-control" id="add_name" name="add_name" placeholder="キャラクター名">
                             </div>
                             <div class="form-group">
-                                <label for="app_name">크기(배수)</label>
-                                <input type="text" class="form-control" id="add_size" name="add_size" placeholder="배수를 입력하시오">
+                                <label for="app_name">サイズ(倍数)</label>
+                                <input type="text" class="form-control" id="add_size" name="add_size" placeholder="倍数">
                             </div>
                             <div class="form-group">
-                                <label for="app_name">이동반경(m)</label>
-                                <input type="text" class="form-control" id="add_radius" name="add_radius" placeholder="최대 30m">
+                                <label for="app_name">移動半径(m)</label>
+                                <input type="text" class="form-control" id="add_radius" name="add_radius" placeholder="移動半径">
                             </div>
                             <div class="form-group">
-                                <label for="app_name">현시높이(m)</label>
-                                <input type="text" class="form-control" id="add_altitude" name="add_altitude" placeholder="높이를 입력하시오.">
+                                <label for="app_name">顕示高(m)</label>
+                                <input type="text" class="form-control" id="add_altitude" name="add_altitude" placeholder="顕示高">
                             </div>
                             <div class="form-group">
-                                <label for="file">화일</label>
+                                <label for="file">ファイル</label>
                                 <input type="file" class="form-control" style="border: 1px solid #00000000; padding: 0.375rem 0" id="file" name="file" />
                             </div>
                             <div class="text-right">
-                                <button class="btn btn-primary cur-p" id="btn_update" type="submit">저장</button>
+                                <button class="btn btn-primary cur-p" id="btn_update" type="submit">保存</button>
                             </div>
                         </form>
                     </div>

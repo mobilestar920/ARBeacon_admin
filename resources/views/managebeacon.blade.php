@@ -43,7 +43,7 @@
                         <span class="icon-holder">
                             <i class="c-blue-500 ti-mobile"></i>
                         </span>
-                        <span class="title">비콘관리</span>
+                        <span class="title">ビーコンの管理</span>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -51,7 +51,7 @@
                         <span class="icon-holder">
                             <i class="c-brown-500 ti-shift-right"></i>
                         </span>
-                        <span class="title">캐랙관리</span>
+                        <span class="title">キャラクターの管理</span>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -59,7 +59,7 @@
                         <span class="icon-holder">
                             <i class="c-deep-red-500 ti-export"></i>
                         </span>
-                        <span class="title">로그아웃</span>
+                        <span class="title">ログアウト</span>
                     </a>
                 </li>
             </ul>
@@ -95,7 +95,7 @@
         <main class='main-content bgc-grey-100'>
             <div id='mainContent'>
                 <div class="container-fluid">
-                    <h4 class="c-grey-900 mT-10 mB-30">비콘목록</h4>
+                    <h4 class="c-grey-900 mT-10 mB-30">ビーコンリスト</h4>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="bgc-white bd bdrs-3 p-20 mB-20">
@@ -104,10 +104,10 @@
                                         <tr>
                                             <th>No</th>
                                             <th>UUID</th>
-                                            <th>위도</th>
-                                            <th>경도</th>
-                                            <th>지역정보</th>
-                                            <th>비고</th>
+                                            <th>緯度</th>
+                                            <th>硬度</th>
+                                            <th>地域情報</th>
+                                            <th>備考</th>
                                             <th></th>
                                         </tr>
                                     </thead>
@@ -146,7 +146,7 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="bd p-15">
-                        <h5 class="m-0">캐랙등록</h5>
+                        <h5 class="m-0">キャラクターの登録</h5>
                     </div>
                     <div class="modal-body">
                         <form method="POST" action="{{ route('register_character') }}" enctype="multipart/form-data">
@@ -157,7 +157,7 @@
                                 <input type="text" class="form-control" id="beacon_id" name="beacon_id" placeholder="App ID">
                             </div>
                             <div class="form-group">
-                                <label for="app_list">캐랙명</label>
+                                <label for="app_list">キャラクター名</label>
                                 <select id="character_id" name="character_id" class="form-control">
                                     <option value="0" selected>캐랙을 선택하세요</option>
                                     @foreach($characters as $i=>$character)
@@ -166,7 +166,7 @@
                                 </select>
                             </div>
                             <div class="text-right">
-                                <button class="btn btn-primary cur-p" id="btn_update" type="submit">저장</button>
+                                <button class="btn btn-primary cur-p" id="btn_update" type="submit">保存</button>
                             </div>
                         </form>
                     </div>
@@ -181,7 +181,7 @@
         <div class="modal-content">
 
             <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel2">캐랙목록</h4>
+                <h4 class="modal-title" id="myModalLabel2">キャラクターのリスト</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
 
@@ -193,10 +193,10 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>이름</th>
-                                        <th>크기</th>
-                                        <th>높이</th>
-                                        <th>이동반경</th>
+                                        <th>キャラクター名</th>
+                                        <th>サイズ</th>
+                                        <th>顕示高</th>
+                                        <th>移動半径</th>
                                     </tr>
                                 </thead>
                                 <tbody>
